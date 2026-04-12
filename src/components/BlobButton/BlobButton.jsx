@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./BlobButton.scss";
 
-const BlobShader = ({ isActive, isGlow = false }) => {
+const BlobShaderButton = ({ isActive, isGlow = false }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -117,7 +117,7 @@ const BlobButton = ({ label, onClick }) => {
   return (
     <div className={`blob-button-container ${isHovered ? "is-hovered" : ""}`}>
       <div className="blob-glow">
-        <BlobShader isActive={isHovered} isGlow={true} />
+        <BlobShaderButton isActive={isHovered} isGlow={true} />
       </div>
 
       <button
@@ -128,7 +128,7 @@ const BlobButton = ({ label, onClick }) => {
       >
         <div className="blob-border">
           <div className="blob-shader-wrapper">
-            <BlobShader isActive={isHovered} />
+            <BlobShaderButton isActive={isHovered} />
           </div>
         </div>
         <span className="blob-label">{label}</span>

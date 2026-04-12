@@ -1,0 +1,50 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 74vh;
+
+  .hero-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .sentence {
+      display: flex;
+    }
+  }
+}
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13vh;
+}
+
+.slot-words {
+  margin: 0 10px;
+  display: flex;
+
+  height: 32.4px;
+}
+
+.actual-span {
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.comma-span {
+  align-self: center;
+  font-size: 1.5rem;
+  margin-right: 5px;
+}

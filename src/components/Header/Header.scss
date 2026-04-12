@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+
+  ul {
+    gap: 10px;
+
+    li {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

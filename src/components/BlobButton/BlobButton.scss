@@ -9,6 +9,7 @@ $glow-speed: 0.5s;
 .blob-button-container {
   position: relative;
   display: inline-block;
+  align-self: center;
 
   .blob-glow {
     position: absolute;
@@ -45,6 +46,7 @@ $glow-speed: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: max-content;
 
   &:active {
     transform: scale(0.95);
