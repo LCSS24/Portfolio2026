@@ -1,0 +1,76 @@
+.slot-container {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: baseline;
+  height: 40px; // Ajuste selon ton design
+  position: relative;
+  padding: 0 10px;
+}
+
+.slot-words {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden; // Cache le mot qui sort vers le bas
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); // Transition fluide de la largeur
+  width: auto;
+  min-width: 0;
+}
+
+.measure-word {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.word-span {
+  left: 0;
+  bottom: 0; // Aligné sur la ligne de base
+  font-size: 1.5rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1;
+
+  &.enter {
+    animation: slideIn 0.3s forwards;
+  }
+
+  &.exit {
+    animation: slideOut 0.3s forwards;
+  }
+}
+
+.comma-span {
+  font-size: 1.5rem;
+  margin-left: 2px;
+}
+
+// L'animation "Roulette" : le mot arrive du haut
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px); // Arrive du haut
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); // S'arrête au centre
+    opacity: 1;
+  }
+}
+
+// Le mot sort vers le bas
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px); // Disparaît vers le bas
+    opacity: 0;
+  }
+}

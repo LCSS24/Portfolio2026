@@ -1,6 +1,6 @@
 import BlobShader from "./components/BlobShader/BlobShader";
 import BlobButton from "./components/BlobButton/BlobButton";
-import SlotWords from "./components/SlotsWords";
+import SlotWords from "./components/SlotWords/SlotWords";
 import "./App.scss";
 import { ChevronDown, Mouse } from "lucide-react";
 import { useState, useEffect } from "react";
