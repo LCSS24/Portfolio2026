@@ -1,0 +1,74 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 74vh;
+
+  .hero-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    .sentence {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.lucide-mouse {
+  animation: floating 3s ease-in-out forwards infinite;
+}
+
+.lucide-chevron-down {
+  animation: floatingChevron 3s ease-in-out forwards infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes floatingChevron {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1; // Le chevron est visible au milieu de la descente
+  }
+  50% {
+    transform: translateY(10px); // Il finit plus bas que la souris
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
