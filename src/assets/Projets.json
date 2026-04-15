@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "titre": "Booki",
+    "description": "Booki est un projet OpenClassrooms visant à créer un site web pour une agence de voyage. Le site permet aux utilisateurs de rechercher et de réserver des hébergements et des activités dans différentes destinations. Le projet met en avant l'utilisation de HTML5, CSS3, et JavaScript pour créer une interface utilisateur attrayante et fonctionnelle.",
+    "imageUrl": "/Booki.png",
+    "projectUrl": "https://lcss24.github.io/OCR-Chapitre-1/",
+    "slug": "booki",
+    "stack": ["HTML", "CSS"]
+  },
+  {
+    "id": 2,
+    "titre": "Nina Carducci",
+    "description": "Nina Carducci est un projet OpenClassrooms visant à optimiser le site vitrine d’une photographe. Le site est audité et amélioré pour renforcer les performances, le référencement (SEO) et l’accessibilité, notamment via l’optimisation des images, le balisage sémantique et les métadonnées. Le projet met en avant l’utilisation de HTML5, CSS3 et JavaScript ainsi que d’outils d’audit (Lighthouse, PageSpeed) pour livrer une interface rapide et mieux référencée.",
+    "imageUrl": "/Carducci.png",
+    "projectUrl": "https://lcss24.github.io/OCR-Chapitre-3/",
+    "slug": "nina_carducci",
+    "stack": ["HTML", "CSS", "JS"]
+  },
+  {
+    "id": 3,
+    "titre": "MoussProd",
+    "description": "NextBeat est un projet personnel visant à créer un site web pour un beatmaker. Le site permet aux utilisateurs de parcourir une liste de prods, d’appliquer des filtres (genre, BPM, ambiance) et d’écouter chaque morceau via un lecteur audio personnalisé. Le projet met en avant l’utilisation de React, JavaScript, HTML5 et CSS3 pour offrir une interface fluide, responsive et orientée écoute.",
+    "imageUrl": "/MoussProd.png",
+    "projectUrl": "",
+    "slug": "mouss_prod",
+    "stack": ["HTML", "CSS", "REACT", "JS"]
+  },
+  {
+    "id": 4,
+    "titre": "NextBeat",
+    "description": "Description du projet NextBeat",
+    "imageUrl": "/NextBeat.png",
+    "projectUrl": "https://nextbeatfr.netlify.app/",
+    "slug": "nextbeat",
+    "stack": ["HTML", "CSS", "VUE", "JS"]
+  },
+  {
+    "id": 5,
+    "titre": "Président",
+    "summary": "oui",
+    "description": "Description du projet Président",
+    "imageUrl": "/NextBeat.png",
+    "projectUrl": "https://trouduc.netlify.app/",
+    "slug": "president",
+    "stack": ["HTML", "CSS", "VUE", "JS"]
+  }
+]

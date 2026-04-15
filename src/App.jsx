@@ -6,7 +6,7 @@ export default function App() {
     <>
       <Hero />
       <section className="project-section">
-        <h3>PROJETS</h3>
+        <h3 className="h3-title">PROJETS</h3>
         <h4>OneMoreGame</h4>
       </section>
     </>
