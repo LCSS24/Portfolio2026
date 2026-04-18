@@ -32,10 +32,7 @@ export default function Hero() {
             <SlotWords />
             <h2>vous êtes au bon endroit</h2>
           </div>
-          <BlobButton
-            label={"Démarrer un projet"}
-            onClick={console.log("caca")}
-          />
+          <BlobButton label={"Démarrer un projet"} />
         </div>
       </div>
       <div className="hero-bottom">
