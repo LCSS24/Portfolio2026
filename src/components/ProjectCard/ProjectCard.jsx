@@ -1,9 +1,17 @@
-export default function ProjectCard(projectObj) {
-  const project = projectObj.projectObj;
-  console.log(project);
+import "./ProjectCard.scss";
+
+export default function ProjectCard({ projectObj, onClick, isActive }) {
+  const project = projectObj;
   return (
     <>
-      <h4>{project.titre}</h4>
+      <div
+        className={`card-container ${isActive ? "active" : ""}`}
+        onClick={onClick}
+        style={{ cursor: "pointer" }}
+      >
+        <img src={"src/assets/images/" + project.imageUrl} alt="" />
+        <div className="mask"></div>
+      </div>
     </>
   );
 }
